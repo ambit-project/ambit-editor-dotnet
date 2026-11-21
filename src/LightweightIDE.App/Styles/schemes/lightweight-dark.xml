@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Lightweight IDE dark theme: lexical colors close to VS Code Dark+, semantic colors (lw:*) so that types,
+     members, locals and parameters look different. Style ids lw:<kind> come from SemanticHighlighter.Kinds. -->
+<style-scheme id="lightweight-dark" name="Lightweight Dark" version="1.0" kind="dark">
+  <author>Lightweight IDE</author>
+  <description>Dark theme with semantic colors for C#</description>
+
+  <color name="bg" value="#1E1E1E"/>
+  <color name="fg" value="#D4D4D4"/>
+  <color name="current" value="#282828"/>
+  <color name="gutter" value="#858585"/>
+  <color name="selection" value="#264F78"/>
+  <color name="keyword" value="#569CD6"/>
+  <color name="control" value="#C586C0"/>
+  <color name="comment" value="#6A9955"/>
+  <color name="string" value="#CE9178"/>
+  <color name="number" value="#B5CEA8"/>
+  <color name="type" value="#4EC9B0"/>
+  <color name="interface" value="#B8D7A3"/>
+  <color name="struct" value="#86C691"/>
+  <color name="method" value="#DCDCAA"/>
+  <color name="local" value="#9CDCFE"/>
+  <color name="parameter" value="#7FB7E8"/>
+  <color name="property" value="#C8B4F5"/>
+  <color name="field" value="#A9A1D8"/>
+  <color name="constant" value="#4FC1FF"/>
+  <color name="event" value="#E8C07D"/>
+  <color name="escape" value="#D7BA7D"/>
+  <color name="muted" value="#C8C8C8"/>
+
+  <style name="text" foreground="fg" background="bg"/>
+  <style name="selection" background="selection"/>
+  <style name="selection-unfocused" background="#3A3D41"/>
+  <style name="cursor" foreground="#AEAFAD"/>
+  <style name="current-line" background="current"/>
+  <style name="current-line-number" foreground="#C6C6C6" background="current"/>
+  <style name="line-numbers" foreground="gutter" background="bg"/>
+  <style name="right-margin" foreground="#3A3A3A" background="#202020"/>
+  <style name="bracket-match" background="#3A3D41" bold="true"/>
+  <style name="bracket-mismatch" background="#5A1D1D"/>
+  <style name="search-match" background="#613214"/>
+  <style name="draw-spaces" foreground="#404040"/>
+
+  <style name="def:comment" foreground="comment" italic="true"/>
+  <style name="def:doc-comment" foreground="comment" italic="true"/>
+  <style name="def:doc-comment-element" foreground="#608B4E"/>
+  <style name="def:keyword" foreground="keyword"/>
+  <style name="def:statement" foreground="control"/>
+  <style name="def:type" foreground="keyword"/>
+  <style name="def:builtin" foreground="keyword"/>
+  <style name="def:boolean" foreground="keyword"/>
+  <style name="def:special-constant" foreground="keyword"/>
+  <style name="def:constant" foreground="constant"/>
+  <style name="def:string" foreground="string"/>
+  <style name="def:special-char" foreground="escape"/>
+  <style name="def:character" foreground="string"/>
+  <style name="def:number" foreground="number"/>
+  <style name="def:decimal" foreground="number"/>
+  <style name="def:floating-point" foreground="number"/>
+  <style name="def:base-n-integer" foreground="number"/>
+  <style name="def:preprocessor" foreground="#9B9B9B"/>
+  <style name="def:operator" foreground="fg"/>
+  <style name="def:identifier" foreground="fg"/>
+  <style name="def:function" foreground="method"/>
+  <style name="def:error" underline="error" underline-color="#F14C4C"/>
+  <style name="def:note" foreground="#E5C07B" bold="true"/>
+  <style name="def:heading" foreground="keyword" bold="true"/>
+  <style name="def:link-text" foreground="string"/>
+  <style name="def:emphasis" italic="true"/>
+  <style name="def:strong-emphasis" bold="true"/>
+
+  <style name="lw:namespace" foreground="muted"/>
+  <style name="lw:class" foreground="type"/>
+  <style name="lw:struct" foreground="struct"/>
+  <style name="lw:interface" foreground="interface"/>
+  <style name="lw:enum" foreground="interface"/>
+  <style name="lw:delegate" foreground="type"/>
+  <style name="lw:type-parameter" foreground="interface" italic="true"/>
+  <style name="lw:method" foreground="method"/>
+  <style name="lw:extension-method" foreground="method" italic="true"/>
+  <style name="lw:property" foreground="property"/>
+  <style name="lw:field" foreground="field"/>
+  <style name="lw:constant" foreground="constant"/>
+  <style name="lw:event" foreground="event"/>
+  <style name="lw:enum-member" foreground="constant"/>
+  <style name="lw:local" foreground="local"/>
+  <style name="lw:parameter" foreground="parameter"/>
+  <style name="lw:label" foreground="muted"/>
+  <style name="lw:control-keyword" foreground="control"/>
+  <style name="lw:string-escape" foreground="escape"/>
+  <style name="lw:operator-overloaded" foreground="method"/>
+  <style name="lw:static" italic="true"/>
+  <!-- other occurrences of the symbol under the caret; its declaration; unused code (faded) -->
+  <style name="lw:usage" background="#45484D"/>
+  <style name="lw:usage-definition" background="#0F4166"/>
+  <style name="lw:unnecessary" foreground="#7A7A7A"/>
+</style-scheme>

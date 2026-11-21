@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Document model without GTK: encoding detection, load/save, dirty state, Markdown layout. -->
+  <ItemGroup>
+    <PackageReference Include="Markdig" />
+  </ItemGroup>
+</Project>

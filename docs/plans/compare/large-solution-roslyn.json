@@ -1,0 +1,112 @@
+{
+  "engine": "Roslyn",
+  "folder": "<large-solution>",
+  "timings": {
+    "load_ms": 9736,
+    "background_analysis_ms": 22802,
+    "member_completion": {
+      "first_ms": 300.6,
+      "p50_ms": 22,
+      "p95_ms": 44.7
+    },
+    "member_completion_typed": {
+      "first_ms": 19.1,
+      "p50_ms": 17.6,
+      "p95_ms": 31
+    },
+    "signature_help": {
+      "first_ms": 21.8,
+      "p50_ms": 15,
+      "p95_ms": 30.3
+    },
+    "hover": {
+      "first_ms": 57.3,
+      "p50_ms": 20.3,
+      "p95_ms": 25.9
+    },
+    "diagnostics": {
+      "first_ms": 61,
+      "p50_ms": 15,
+      "p95_ms": 19.9
+    },
+    "definition": {
+      "first_ms": 25,
+      "p50_ms": 13.5,
+      "p95_ms": 21.1
+    },
+    "references": {
+      "first_ms": 2416.8,
+      "p50_ms": 1357.3,
+      "p95_ms": 1397.5
+    },
+    "unimported_type": {
+      "first_ms": 166.3,
+      "p50_ms": 34.6,
+      "p95_ms": 77.5
+    },
+    "di_registration": {
+      "first_ms": 36,
+      "p50_ms": 10.5,
+      "p95_ms": 20.2
+    },
+    "implementations": {
+      "first_ms": 1155.2,
+      "p50_ms": 949.7,
+      "p95_ms": 1115.2
+    }
+  },
+  "quality": {
+    "member_completion": {
+      "expected": "GetAsync",
+      "rank": 1,
+      "top3": true,
+      "items": 48,
+      "top": "GetAsync, Equals, GetHashCode, GetType, ToString"
+    },
+    "member_completion_typed": {
+      "expected": "GetAsync",
+      "rank": 1,
+      "top3": true,
+      "items": 48,
+      "top": "GetAsync, GetHashCode, GetType"
+    },
+    "signature_help": "2 overloads, active parameter 0",
+    "hover": "(parameter) ICompanySnapshotRepository snapshotRepository  \u0027snapshotRepository\u0027 is not null here.",
+    "diagnostics": "0 diagnostics",
+    "definition": "1 locations",
+    "references": "7 references",
+    "unimported_type": {
+      "expected": "StringBuilder",
+      "rank": 1,
+      "top3": true,
+      "items": 13446,
+      "top": "StringBuilder, StringBuilderPooledObjectPolicy, StringBuilderRuneEnumerator, DbConnectionStringBuilder, NpgsqlConnectionStringBuilder"
+    },
+    "di_registration": {
+      "expected": "MailSettingsStore",
+      "rank": 1,
+      "top3": true,
+      "items": 6470,
+      "top": "MailSettingsStore, AbandonedMutexException, AccessViolationException, Action, Action\u003C\u003E"
+    },
+    "implementations": "2 implementations"
+  },
+  "memory_after_load_mb": 803,
+  "scenarios": {
+    "member_completion": "a command handler: repository.GetAsync( (list after the dot)",
+    "member_completion_typed": "a command handler: after typing 3 letters",
+    "signature_help": "a command handler: inside the call\u0027s argument list",
+    "hover": "a command handler: on the field",
+    "diagnostics": "a command handler: whole file",
+    "definition": "a command handler: method",
+    "references": "a command handler: method",
+    "unimported_type": "a command handler: StringBuilder without using System.Text",
+    "di_registration": "a DI registration module: .AddSingleton\u003CIMailSettingsStore, MailSettingsStore\u003E() (\u2605 implementations)",
+    "implementations": "a DI registration module: of IMailSettingsStore"
+  },
+  "memory_after_scenarios_mb": 1314,
+  "memory_steady_mb": 1314,
+  "memory_peak_mb": 1454,
+  "gui_process_mb": 1314,
+  "server_process_mb": 0
+}

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>lightweight-ide</AssemblyName>
+    <RootNamespace>LightweightIDE.App</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <!-- packaging/build-deb.sh sets the real version; a local build shows "dev". -->
+    <Version>0.0.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="GirCore.Gtk-4.0" />
+    <PackageReference Include="GirCore.GtkSource-5" />
+    <PackageReference Include="Serilog" />
+    <PackageReference Include="Serilog.Extensions.Logging" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+    <PackageReference Include="Microsoft.Extensions.Logging" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LightweightIDE.Editor\LightweightIDE.Editor.csproj" />
+    <ProjectReference Include="..\LightweightIDE.DotNet\LightweightIDE.DotNet.csproj" />
+    <ProjectReference Include="..\LightweightIDE.Language\LightweightIDE.Language.csproj" />
+    <ProjectReference Include="..\LightweightIDE.Indexing\LightweightIDE.Indexing.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.json" CopyToOutputDirectory="PreserveNewest" />
+    <EmbeddedResource Include="Styles\*.css" LogicalName="%(Filename)%(Extension)" />
+    <!-- Editor color schemes (GtkSourceView XML), loaded from <app>/Styles/schemes. -->
+    <None Include="Styles\schemes\*.xml" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

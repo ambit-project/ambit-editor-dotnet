@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Lightweight IDE
+GenericName=C# IDE
+Comment=Lightweight native C# / .NET editor (GTK4)
+Exec=lightweight-ide %F
+Icon=lightweight-ide
+Terminal=false
+Categories=Development;IDE;
+MimeType=text/x-csharp;inode/directory;
+StartupWMClass=lightweight-ide

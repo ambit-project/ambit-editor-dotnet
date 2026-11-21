@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/LightweightIDE.App/LightweightIDE.App.csproj" />
+    <Project Path="src/LightweightIDE.DotNet/LightweightIDE.DotNet.csproj" />
+    <Project Path="src/LightweightIDE.Editor/LightweightIDE.Editor.csproj" />
+    <Project Path="src/LightweightIDE.Indexing/LightweightIDE.Indexing.csproj" />
+    <Project Path="src/LightweightIDE.Language/LightweightIDE.Language.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/LightweightIDE.Tests/LightweightIDE.Tests.csproj" />
+  </Folder>
+</Solution>

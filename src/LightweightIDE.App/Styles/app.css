@@ -1,0 +1,82 @@
+/* Compact developer layout on top of the user's GTK theme. Colors come from the theme (@theme_* / currentColor)
+   so light and dark both work; only status colors are fixed. */
+
+window { font-size: 10pt; }
+
+/* menu bar + toolbar */
+popovermenubar { padding: 0 4px; min-height: 24px; }
+popovermenubar > item { padding: 2px 8px; }
+.toolbar { padding: 2px 6px; border-bottom: 1px solid alpha(currentColor, 0.12); }
+.toolbar button { min-height: 24px; min-width: 24px; padding: 2px 8px; }
+.toolbar dropdown button { padding: 2px 6px; }
+.toolbar spinner { margin: 0 6px; }
+.search-button { margin-left: 8px; padding: 2px 12px; border: 1px solid alpha(currentColor, 0.15); border-radius: 4px; background: alpha(currentColor, 0.04); }
+.stop-button:not(:disabled) { color: #e5484d; }
+
+paned > separator { min-width: 1px; min-height: 1px; background: alpha(currentColor, 0.12); }
+
+/* explorer */
+.panel-header { padding: 2px 4px 2px 10px; min-height: 26px; }
+.panel-title { font-size: 8.5pt; font-weight: bold; opacity: 0.7; letter-spacing: 1px; }
+listview.explorer { background: transparent; }
+listview.explorer > row { padding: 0 4px; min-height: 22px; }
+listview.explorer treeexpander { padding: 0; }
+notebook.explorer-tabs > header { padding: 0; border-bottom: 1px solid alpha(currentColor, 0.12); }
+notebook.explorer-tabs > header tab { padding: 2px 10px; min-height: 22px; }
+notebook.explorer-tabs > header tab:checked { border-bottom: 2px solid @theme_selected_bg_color; font-weight: bold; }
+.file-icon { opacity: 0.75; margin-right: 4px; }
+.project-label { font-weight: bold; }
+
+/* editor tabs */
+notebook.editor-tabs > header { padding: 0; border-bottom: 1px solid alpha(currentColor, 0.12); }
+notebook.editor-tabs > header tab { padding: 2px 4px 2px 10px; min-height: 24px; }
+notebook.editor-tabs > header tab:checked { box-shadow: inset 0 -2px @theme_selected_bg_color; }
+.tab-close { min-height: 16px; min-width: 16px; padding: 1px; margin-left: 2px; opacity: 0.6; }
+.tab-close:hover { opacity: 1; }
+.empty-title { font-size: 15pt; opacity: 0.55; margin-bottom: 6px; }
+textview.editor { padding: 0; }
+.infobar { padding: 4px 10px; background: alpha(#d39e00, 0.18); }
+
+/* find bar */
+.findbar { padding: 3px 8px; border-bottom: 1px solid alpha(currentColor, 0.12); }
+.findbar entry { min-height: 24px; }
+.findbar button { min-height: 22px; padding: 1px 6px; }
+
+/* bottom panel */
+notebook.bottom-panel > header { padding: 0; border-top: 1px solid alpha(currentColor, 0.12); }
+notebook.bottom-panel > header tab { padding: 2px 10px; min-height: 22px; }
+.panel-toolbar { padding: 2px 6px; }
+.panel-toolbar button { min-height: 20px; padding: 0 8px; }
+list.result-list > row, list.palette-list > row { padding: 1px 8px; min-height: 20px; }
+.result-location { font-family: monospace; opacity: 0.75; }
+.severity-error, .test-failed, .status-error { color: #e5484d; }
+.severity-warning { color: #c88a00; }
+.severity-info { color: #5b8def; }
+.test-passed, .status-ok { color: #2f9e44; }
+textview.output, textview.monospace { font-family: monospace; font-size: 9.5pt; }
+
+/* status bar */
+.statusbar { padding: 1px 4px; min-height: 22px; font-size: 9pt; background: alpha(currentColor, 0.05); border-top: 1px solid alpha(currentColor, 0.12); }
+.status-item { padding: 0 8px; opacity: 0.85; }
+.status-message { padding: 0 8px; opacity: 0.7; }
+
+/* palette + dialogs */
+window.palette { border: 1px solid alpha(currentColor, 0.25); border-radius: 6px; }
+window.palette entry { min-height: 30px; font-size: 11pt; }
+.palette-detail { opacity: 0.6; font-size: 9pt; }
+.shortcut-keys { font-family: monospace; font-weight: bold; }
+label.error { color: #e5484d; }
+
+/* completion */
+popover.completion > contents { padding: 2px; }
+popover.completion list > row { padding: 1px 6px; min-height: 18px; }
+.completion-kind { font-size: 8pt; opacity: 0.6; min-width: 64px; }
+
+/* debugging */
+.status-debug { padding: 0 8px; color: #b45309; font-weight: bold; }
+.variable-name { font-weight: bold; }
+.tree-expander { min-height: 16px; min-width: 16px; padding: 0 2px; }
+.completion-smart { font-weight: bold; }
+.completion-smart-reason { color: #2f9e44; font-size: 9pt; }
+.completion-description { padding: 4px 8px; font-size: 9pt; opacity: 0.85; border-top: 1px solid alpha(currentColor, 0.15); }
+popover.signature-help > contents { padding: 4px 6px; font-family: monospace; font-size: 9.5pt; }

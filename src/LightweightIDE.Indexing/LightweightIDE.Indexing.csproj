@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LightweightIDE.DotNet\LightweightIDE.DotNet.csproj" />
+    <ProjectReference Include="..\LightweightIDE.Editor\LightweightIDE.Editor.csproj" />
+  </ItemGroup>
+</Project>
